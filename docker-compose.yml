@@ -1,0 +1,13 @@
+version: '3.7'
+
+networks:
+  discord-monit-db:
+
+services:
+  aws:
+    image: test-discord:latest
+    container_name: test_discord_container
+    networks:
+      - discord-monit-db
+    env_file:
+      - .env
