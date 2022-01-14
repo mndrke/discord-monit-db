@@ -5,8 +5,8 @@ networks:
 
 services:
   aws:
-    image: test-discord:latest
-    container_name: test_discord_container
+    image: ghcr.io/mndrke/discord-monit-db:latest
+    container_name: discord_monit_db_container
     networks:
       - discord-monit-db
     env_file:
